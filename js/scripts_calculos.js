@@ -12,13 +12,13 @@ const calculoDesconto = (objPessoa) => {
     if((objPessoa) < 18 || (objPessoa.renda <= 1700)){
         resposta = 'Isento de Desconto'
     }else if(objPessoa.renda <= 5000){
-        resposta = objPessoa.renda * 0.005
+        resposta = `R$ ${parseFloat(objPessoa.renda * 0.005).toFixed(2).replace('.',',')} reais de desconto.`
     }else if(objPessoa.renda <= 8000){
-        resposta = objs.renda * 0.08
+        resposta = `R$ ${parseFloat(objPessoa.renda * 0.008).toFixed(2).replace('.',',')} reais de desconto.`
     }else if(objPessoa.renda <= 10000){
-        resposta = objPessoa.renda * 0.10
+        resposta = `R$ ${parseFloat(objPessoa.renda * 0.010).toFixed(2).replace('.',',')} reais de desconto.`
     }else{
-        resposta = objPessoa.renda * 0.03
+        `R$ ${parseFloat(objPessoa.renda * 0.003).toFixed(2).replace('.',',')}`
     }
 
     return resposta

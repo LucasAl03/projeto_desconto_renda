@@ -1,3 +1,6 @@
+//todo arquivo importado passa a ser module e deve ser dito no link do scripts_pessoa.js
+import {calculoDesconto} from './scripts_calculos.js'
+
 //Criar um ARRAY de objetos e pessoas tem que ser em colchete
 const pessoas = []
 
@@ -46,6 +49,6 @@ const listPessoa = () => {
 
     //Percorrendo o Array com a estrutura de repetição forEach
     pessoas.forEach((elem, i)=>{
-        divPessoa.innerHTML += `<div class='item-pessoa'> ${i + 1} - ${elem.nome}, ${elem.idade} anos, R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} </div>`
+        divPessoa.innerHTML += `<div class='item-pessoa'> ${i + 1} - ${elem.nome}, ${elem.idade} anos, R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')}, ${calculoDesconto(elem)}  </div>`
     })
 }
