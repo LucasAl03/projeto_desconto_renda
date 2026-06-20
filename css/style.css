@@ -5,6 +5,7 @@
     border: solid 1px #718282; 
     padding: 25px;
     border-radius: 8px;
+    background-color: #6db6a3;
 }
 
 h3{
@@ -22,7 +23,11 @@ form{
     background-color: #7fffd4;
     padding: 25px;
     border-radius: 8px;
-    color: #43645c;
+    color: #000000;
+}
+
+input{
+    background-color: #6db6a3;
 }
 
 label, input{
@@ -32,6 +37,7 @@ label, input{
     height: 30px;
     font-size: 1.2em;
     padding: 0px 15px;
+    border-radius: 8px;
 }
 
 button{
@@ -39,11 +45,21 @@ button{
     width: 200px;
     height: 35px;
     cursor: pointer;
+    border-radius: 8px;
+    background-color: #6db6a3;
 }
 
 #div-lista-pessoas{
     background-color: #7fffd4;
     border-radius: 5px;
     padding: 25px;
-    color: #43645c;
+    color: #080808;
+}
+
+/* o ponto ve antes pois o div esta concatenado dentro de um innerhtml*/
+.item-pessoa{
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #6db6a3;
+    border-radius: 15px;
 }
